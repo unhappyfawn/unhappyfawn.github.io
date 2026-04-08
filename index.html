@@ -3,44 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <title>Your Name — Cybersecurity</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
 </head>
 <body>
 
+  <!-- NAVIGATION -->
   <nav>
-    <span class="logo">Travis Truong</span>
-    <ul>
+    <div class="nav-logo">~/yourname</div>
+    <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <section id="hero">
-    <h1>Hi, I'm <em>Travis Truong</em></h1>
-    <p>One sentence about what you do and what you care about.</p>
-    <a href="#work">See my work →</a>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write 2–3 sentences about yourself here. Where are you based? What do you make?</p>
-  </section>
-
-  <section id="work">
-    <h2>My Work</h2>
-    <div class="project-card">
-      <h3>Project Name</h3>
-      <p>What it is and what you made.</p>
-      <a href="#">View project →</a>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag"><div class="dot"></div>Open to opportunities</div>
+    <h1>Network &amp; <span class="hl">Cloud</span><br>Security <span class="hl2">Engineer</span></h1>
+    <p class="hero-desc">Cybersecurity student at Virginia Tech — building skills in network defense and cloud infrastructure security, one project at a time.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
-  </section>
+  </div>
 
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <p>Email me at <a href="mailto:travistvtruong@gmail.com">travistvtruong@gmail.com</a></p>
-  </section>
+  <!-- PAGE CONTENT -->
+  <div class="page">
+
+    <!-- ABOUT -->
+    <div class="card" id="about">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <span class="section-title">About Me</span>
+        <div class="section-line"></div>
+      </div>
+      <p class="about-body">
+        Cybersecurity student at <strong>Virginia Tech</strong> with a focus on network and cloud security. I'm currently building hands-on skills through personal projects — from setting up home lab environments and analyzing network traffic, to exploring cloud infrastructure security on AWS. This site documents that journey.
+      </p>
+      <div class="cert-row">
+        <div class="cert-badge cert-done">&#10003; CompTIA Security+</div>
+        <div class="cert-badge cert-progress">&#8594; AWS Cloud Practitioner (in progress)</div>
+        <div class="cert-badge cert-planned">&#183;&#183; CompTIA Network+ (planned)</div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="card" id="projects">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <span class="section-title">Projects</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-item">
+          <div>
+            <div class="project-tag">Network Security &middot; Python</div>
+            <div class="project-name">Network Traffic Analyzer</div>
+            <div class="project-desc">A Python script that captures and flags suspicious network traffic patterns using Scapy.</div>
+          </div>
+          <div class="project-arrow">&#8594;</div>
+        </div>
+
+        <div class="project-item">
+          <div>
+            <div class="project-tag">Cloud Security &middot; AWS</div>
+            <div class="project-name">AWS Misconfiguration Scanner</div>
+            <div class="project-desc">Scans an AWS account for common security misconfigurations like public S3 buckets and overpermissive IAM roles.</div>
+          </div>
+          <div class="project-arrow">&#8594;</div>
+        </div>
+
+        <div class="project-item">
+          <div>
+            <div class="project-tag">Home Lab &middot; VirtualBox</div>
+            <div class="project-name">Virtual Security Lab</div>
+            <div class="project-desc">A documented home lab setup simulating a small enterprise network for hands-on defensive security practice.</div>
+          </div>
+          <div class="project-arrow">&#8594;</div>
+        </div>
+
+        <div class="project-item">
+          <div>
+            <div class="project-tag">CTF Writeups &middot; TryHackMe</div>
+            <div class="project-name">Lab Writeups</div>
+            <div class="project-desc">Documented solutions and lessons learned from TryHackMe and HackTheBox challenges.</div>
+          </div>
+          <div class="project-arrow">&#8594;</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card" id="skills">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <span class="section-title">Skills &amp; Tools</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <div class="skill-group-label">Network Security</div>
+          <div class="skill-list">
+            <div class="skill-item">Wireshark</div>
+            <div class="skill-item">Firewalls / IDS / IPS</div>
+            <div class="skill-item">TCP/IP &amp; OSI Model</div>
+            <div class="skill-item">VPN &amp; Network Protocols</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Cloud Security</div>
+          <div class="skill-list">
+            <div class="skill-item">AWS (IAM, S3, VPC)</div>
+            <div class="skill-item">Cloud Misconfiguration</div>
+            <div class="skill-item">Infrastructure Hardening</div>
+            <div class="skill-item">Security Groups &amp; ACLs</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">General</div>
+          <div class="skill-list">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Linux / Bash</div>
+            <div class="skill-item">Git &amp; GitHub</div>
+            <div class="skill-item">CTF &amp; Lab Environments</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card" id="contact">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <span class="section-title">Get in Touch</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <p class="contact-note">Open to internships, research opportunities, and connecting with others in the security community.</p>
+          <div class="contact-label">Email</div>
+          <div class="contact-val"><a href="mailto:yourname@vt.edu">yourname@vt.edu</a></div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-val"><a href="#">linkedin.com/in/yourname</a></div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-val"><a href="#">github.com/yourname</a></div>
+        </div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-val">Blacksburg, VA</div>
+          <div class="contact-label">Status</div>
+          <div class="contact-val contact-available">Available for opportunities</div>
+          <div class="contact-label">Education</div>
+          <div class="contact-val">Virginia Tech &mdash; Cybersecurity</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end .page -->
+
+  <footer>
+    &copy; 2026 Your Name &mdash; Built from scratch
+  </footer>
 
 </body>
 </html>
